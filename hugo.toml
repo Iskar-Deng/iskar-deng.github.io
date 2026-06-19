@@ -1,0 +1,7 @@
+baseURL = "https://iskar-deng.github.io/"
+languageCode = "en-us"
+title = "Iskar Deng"
+
+[params]
+  author = "Iskar Deng"
+  description = "Personal website of Iskar Deng."

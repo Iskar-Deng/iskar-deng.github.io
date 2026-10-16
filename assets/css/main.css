@@ -183,7 +183,7 @@ h1 {
 
 .project-entry {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
+  grid-template-columns: minmax(0, 1fr) 240px;
   gap: 40px;
   align-items: center;
 }
@@ -233,15 +233,47 @@ h1 {
 .project-entry-image {
   display: flex;
   justify-content: flex-end;
+  width: 240px;
+  max-width: 100%;
+  height: 168px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
 }
 
 .project-entry-image img {
-  width: 300px;
-  max-height: 210px;
-  object-fit: contain;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  width: 240px;
+  height: 168px;
+  object-fit: cover;
+  transform: scale(1.15);
   background: var(--paper);
+}
+
+.project-image-go {
+  position: relative;
+  background: var(--paper);
+}
+
+.project-entry-image.project-image-go img {
+  position: absolute;
+  width: 166px;
+  max-width: none;
+  height: 166px;
+  transform: none;
+  object-fit: cover;
+  border: 1px solid rgb(0 0 0 / 18%);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 20%);
+}
+
+.go-board-first {
+  left: -22px;
+  top: 0;
+}
+
+.go-board-second {
+  right: -22px;
+  top: 20px;
 }
 
 .page {
@@ -298,7 +330,7 @@ h1 {
 
   .project-entry-image img {
     width: 100%;
-    max-width: 300px;
+    max-width: 240px;
   }
 
   .news-item {

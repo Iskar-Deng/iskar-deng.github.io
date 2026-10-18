@@ -181,6 +181,12 @@ h1 {
   max-width: 940px;
 }
 
+.research-note {
+  margin: -8px 0 20px;
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
 .project-entry {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 240px;
